@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/shop.css">
+    <script src="js/components.js"></script>
     <script src="js/theme.js"></script>
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -37,24 +38,7 @@
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <nav class="hs-nav" aria-label="Main navigation">
-        <div class="hs-nav-inner">
-            <a href="/" class="hs-logo">
-                HOMEGROWN SPIRITS
-                <span>Fine Arts & Functional Crafts</span>
-            </a>
-            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="shop-nav-links">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="hs-nav-links" id="shop-nav-links">
-                <li><a href="/" data-nav="index">Home</a></li>
-                <li><a href="/catalog.html" data-nav="catalog">Catalog</a></li>
-                <li><a href="/artists.html" data-nav="artists">Artists</a></li>
-                <li><a href="/policies.html" data-nav="policies">Policies</a></li>
-                <li><button type="button" class="theme-toggle" aria-label="Toggle theme"><i class="bi bi-sun"></i></button></li>
-            </ul>
-        </div>
-    </nav>
+    <div id="hs-header"></div>
 
     <!-- Hero -->
     <section class="hs-hero" id="main">
@@ -106,7 +90,7 @@
                     </p>
                     <div style="display:flex;gap:0.75rem;flex-wrap:wrap;margin-top:1.25rem">
                         <a href="/catalog.html" class="btn btn-primary"><i class="bi bi-bag"></i> Shop Now</a>
-                        <a href="mailto:sullivanrsteele@gmail.com" class="btn"><i class="bi bi-envelope"></i> Custom Order</a>
+                        <a href="mailto:homegrownspirits@gmail.com" class="btn"><i class="bi bi-envelope"></i> Custom Order</a>
                     </div>
                 </div>
                 <div>
@@ -155,45 +139,7 @@
         </section>
     </div>
 
-    <footer class="hs-footer">
-        <div class="hs-footer-inner">
-            <div class="hs-footer-grid">
-                <div class="hs-footer-brand">
-                    <h3>Homegrown Spirits</h3>
-                    <p>Handmade art and goods from Charleston, WV. Sand-etched glass, wood craft, prints, and digital creations.</p>
-                    <p style="margin-top:0.5rem"><a href="mailto:sullivanrsteele@gmail.com"><i class="bi bi-envelope"></i> sullivanrsteele@gmail.com</a></p>
-                </div>
-                <div class="hs-footer-col">
-                    <h4>Shop</h4>
-                    <ul>
-                        <li><a href="/catalog.html">All Products</a></li>
-                        <li><a href="/catalog.html?type=physical">Handmade Goods</a></li>
-                        <li><a href="/catalog.html?type=print">Prints</a></li>
-                        <li><a href="/catalog.html?type=digital">Digital Downloads</a></li>
-                        <li><a href="/artists.html">Artists</a></li>
-                    </ul>
-                </div>
-                <div class="hs-footer-col">
-                    <h4>Info</h4>
-                    <ul>
-                        <li><a href="/policies.html">Shipping &amp; Returns</a></li>
-                        <li><a href="/policies.html#payments">Payments</a></li>
-                        <li><a href="/policies.html#privacy">Privacy</a></li>
-                        <li><a href="mailto:sullivanrsteele@gmail.com">Custom Orders</a></li>
-                        <li><a href="https://www.sullivanrsteele.com" title="Back to Sullivan Steele's portfolio">← Portfolio Site</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="hs-footer-bottom">
-                <span>&copy; 2026 Sullivan Steele · Homegrown Spirits · Charleston, WV</span>
-                <span>
-                    <a href="/policies.html">Policies</a> ·
-                    <a href="mailto:sullivanrsteele@gmail.com">Contact</a> ·
-                    <a href="https://www.sullivanrsteele.com">sullivanrsteele.com</a>
-                </span>
-            </div>
-        </div>
-    </footer>
+    <div id="hs-footer"></div>
 
     <script src="js/cart.js"></script>
     <script src="js/featured.js"></script>
